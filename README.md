@@ -3,4 +3,4 @@ Cylindrical geodesic flow matching is a JAX implementation of the phase-amplitud
 pip install -e .
 python3 -m pytest
 
-Tests check the closed-form geodesic, the constant-norm oracle field, the affine-bridge distortion bound, Hilbert amplitude, Heun projection, and a tiny flow-matching step on synthetic pairs. They do not train the 1M-parameter U-Net, do not use PPG or SCG recordings, and do not implement the extended Hilbert transform.
+Tests check the closed-form geodesic, the constant-norm oracle field, the affine-bridge distortion bound, Hilbert amplitude, Heun projection, and a tiny flow-matching step on synthetic pairs. They do not train the 1M-parameter U-Net, do not use PPG or SCG recordings, and do not implement the extended Hilbert transform. The H200 smoke (paper-width U-Net, a few AdamW steps) did not run: the job stayed pending and was cancelled before it started.
